@@ -45,7 +45,7 @@ Easy-Classify是一个基于python的sklearn包，自动生成二分类Excel实�
 * 训练测试：
  ```ssh
   python easy_classify.py -i {input_file.libsvm} -t {float: test size rate of file}
-  # 如：python easy_classify.py -i shiyou.libsvm -t 0.33
+  # 如：python easy_classify.py -i train.libsvm -t 0.33
 ```
 
 * 帮助：
