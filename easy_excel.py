@@ -16,7 +16,7 @@ def set_style(name='Times New Roman', bold=False):
     style.alignment = alignment
     return style
 
-def save(results):
+def save(dimension, results):
     try:
         wb = xlwt.Workbook(encoding='utf-8')
         ws = wb.add_sheet('results')
@@ -28,7 +28,7 @@ def save(results):
         for i in range(0, len(row0)):
             ws.write(0, i+1, row0[i], set_style(bold=True))
         # Write results
-        ws.write_merge(1, len(results), 1, 1, u'188D', set_style(bold=True))
+        ws.write_merge(1, len(results), 1, 1, dimension+'D', set_style(bold=True))
         end = len(results[0])
         line = u'正：'+str(results[0][end-2])+u' 反：'+str(results[0][end-1])
         ws.write_merge(1, len(results), 2, 2, line, set_style(bold=True))
