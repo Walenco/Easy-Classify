@@ -1,5 +1,5 @@
 # Easy-Classify
-version 0.11
+version 0.2
 
 ##Easy-Classify是什么?
 
